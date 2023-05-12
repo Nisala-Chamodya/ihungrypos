@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pane" prefHeight="536.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.blacky.ihungrypos.controller.ViewOrderFormController">
+   <children>
+      <Label layoutX="195.0" layoutY="14.0" text="View Order Details">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="35.0" fitWidth="32.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#backImgOnClickAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="30.0" layoutY="59.0" prefHeight="35.0" prefWidth="115.0" text="Order ID :">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="104.0" prefHeight="35.0" prefWidth="130.0" text="Customer ID :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="153.0" prefHeight="35.0" prefWidth="145.0" text="Customer Name :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="207.0" prefHeight="35.0" prefWidth="130.0" text="QTY :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="261.0" prefHeight="35.0" prefWidth="130.0" text="Price :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="311.0" prefHeight="35.0" prefWidth="130.0" text="Order Status :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pane" prefHeight="519.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.blacky.ihungrypos.controller.UpdateOrderFormController">
+   <children>
+      <Label layoutX="199.0" layoutY="12.0" text="Update Order">
+         <font>
+            <Font name="Bodoni MT Black" size="31.0" />
+         </font>
+      </Label>
+      <JFXComboBox layoutX="30.0" layoutY="68.0" prefHeight="31.0" prefWidth="524.0" promptText="Order Id" />
+      <JFXTextField layoutX="33.0" layoutY="115.0" prefHeight="31.0" prefWidth="518.0" promptText="customer ID" />
+      <JFXTextField layoutX="33.0" layoutY="166.0" prefHeight="31.0" prefWidth="518.0" promptText="Customer Name" />
+      <JFXTextField layoutX="33.0" layoutY="212.0" prefHeight="31.0" prefWidth="518.0" promptText="QTY" />
+      <JFXTextField layoutX="33.0" layoutY="260.0" prefHeight="31.0" prefWidth="518.0" promptText="Price" />
+      <JFXComboBox layoutX="30.0" layoutY="309.0" prefHeight="31.0" prefWidth="524.0" promptText="Order State" />
+      <JFXButton layoutX="314.0" layoutY="363.0" onAction="#btnUpdateOnClickAcction" style="-fx-background-color: green;" text="Update Order" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="35.0" fitWidth="32.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#backImgOnClickAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXButton layoutX="456.0" layoutY="363.0" onAction="#btnCancelOnAction" style="-fx-background-color: red;" text="Cancel" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

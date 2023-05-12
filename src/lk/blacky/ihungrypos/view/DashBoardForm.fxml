@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.blacky.ihungrypos.controller.DashBoardFormController">
+   <children>
+      <Label layoutX="230.0" layoutY="32.0" text="DashBord">
+         <font>
+            <Font name="Bodoni MT Black" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="92.0" fitWidth="135.0" layoutX="36.0" layoutY="124.0" onMouseClicked="#manageCustomerOnClickAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/customer.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label />
+      <Label layoutX="39.0" layoutY="227.0" text="Manage Customer">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="92.0" fitWidth="135.0" layoutX="181.0" layoutY="124.0" onMouseClicked="#btnPlaceOrderOnClickAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/place%20order.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="200.0" layoutY="227.0" text="Place Order">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="92.0" fitWidth="135.0" layoutX="325.0" layoutY="124.0" onMouseClicked="#btnUpdateOrderOnClickAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/update.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="471.0" layoutY="227.0" prefHeight="15.0" prefWidth="72.0" text="View All">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="92.0" fitWidth="135.0" layoutX="461.0" layoutY="124.0" onMouseClicked="#btnViewAllOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/view.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="345.0" layoutY="227.0" prefHeight="15.0" prefWidth="72.0" text="Update Order">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="86.0" layoutX="507.0" layoutY="321.0" onMouseClicked="#btnShutdownOnClickAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/on-off-button.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

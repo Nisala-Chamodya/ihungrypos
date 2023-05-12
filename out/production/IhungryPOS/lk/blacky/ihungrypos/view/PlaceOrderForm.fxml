@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.blacky.ihungrypos.controller.PlaceOrderFormController">
+   <children>
+      <Label layoutX="194.0" layoutY="14.0" text="Place Order Form">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustID" layoutX="81.0" layoutY="103.0" prefHeight="31.0" prefWidth="404.0" promptText="CustomerID" />
+      <JFXTextField fx:id="txtName" layoutX="81.0" layoutY="157.0" prefHeight="31.0" prefWidth="404.0" promptText="Customer Name" />
+      <JFXTextField fx:id="txtQTY" layoutX="81.0" layoutY="200.0" prefHeight="31.0" prefWidth="404.0" promptText="Burger QTY" />
+      <Label layoutX="26.0" layoutY="49.0" prefHeight="35.0" prefWidth="115.0" text="Order ID :">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtPrice" layoutX="81.0" layoutY="250.0" prefHeight="31.0" prefWidth="404.0" promptText="Price" />
+      <JFXButton layoutX="308.0" layoutY="298.0" onAction="#btnPlaceOrder" style="-fx-background-color: orange;" text="Place Order" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="446.0" layoutY="298.0" onAction="#btnCancelOnAction" style="-fx-background-color: red;" text="Cancel" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="31.0" fitWidth="45.0" layoutX="10.0" layoutY="5.0" onMouseClicked="#backImgOnClickAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="lblOid" layoutX="145.0" layoutY="49.0" prefHeight="35.0" prefWidth="261.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
